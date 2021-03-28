@@ -18,7 +18,7 @@ export default class ColumnChart {
 
   generateTemplate() {
     return `
-    <div class="column-chart ${this.data.length ? '' : 'column-chart_loading'}" style="--chart-height: 50">
+    <div class="column-chart ${this.data.length ? '' : 'column-chart_loading'}" style="--chart-height: ${this.chartHeight}">
       <div class="column-chart__title">
         Total ${this.label}
         ${this.generateLink()}
